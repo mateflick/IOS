@@ -1,0 +1,6 @@
+framework module Pods_MateflickPhotobankTests {
+  umbrella header "Pods-MateflickPhotobankTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

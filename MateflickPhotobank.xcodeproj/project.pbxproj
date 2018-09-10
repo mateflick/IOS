@@ -1,0 +1,1249 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		28022E7020FEEDD8006CC278 /* SearchEventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28022E6F20FEEDD8006CC278 /* SearchEventTableViewCell.swift */; };
+		281EE3A920EB7D4300B08E57 /* CreateEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EE3A820EB7D4300B08E57 /* CreateEventViewController.swift */; };
+		281EE3AC20EB97BF00B08E57 /* CreateAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 281EE3AB20EB97BF00B08E57 /* CreateAlbumViewController.swift */; };
+		28402B5F20F0D8B2006CFE0F /* AlbumData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28402B5E20F0D8B2006CFE0F /* AlbumData.swift */; };
+		28402B6120F0DFBF006CFE0F /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28402B6020F0DFBF006CFE0F /* Photos.framework */; };
+		28402B6320F0DFC8006CFE0F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28402B6220F0DFC8006CFE0F /* AVFoundation.framework */; };
+		28586C8920B67E7D0074C97D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586C8820B67E7D0074C97D /* AppDelegate.swift */; };
+		28586C8B20B67E7D0074C97D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586C8A20B67E7D0074C97D /* ViewController.swift */; };
+		28586C8E20B67E7D0074C97D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28586C8C20B67E7D0074C97D /* Main.storyboard */; };
+		28586C9020B67E800074C97D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28586C8F20B67E800074C97D /* Assets.xcassets */; };
+		28586C9320B67E800074C97D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28586C9120B67E800074C97D /* LaunchScreen.storyboard */; };
+		28586C9E20B67E800074C97D /* MateflickPhotobankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586C9D20B67E800074C97D /* MateflickPhotobankTests.swift */; };
+		28586CA920B67E800074C97D /* MateflickPhotobankUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CA820B67E800074C97D /* MateflickPhotobankUITests.swift */; };
+		28586CBD20B68ECA0074C97D /* GradientRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CBC20B68ECA0074C97D /* GradientRoundedButton.swift */; };
+		28586CBF20B68FBE0074C97D /* UIViewController+Photobank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CBE20B68FBE0074C97D /* UIViewController+Photobank.swift */; };
+		28586CC120B6BDCD0074C97D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CC020B6BDCD0074C97D /* Constants.swift */; };
+		28586CC320B6C1690074C97D /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28586CC220B6C1690074C97D /* Auth.storyboard */; };
+		28586CC620B703370074C97D /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CC520B703370074C97D /* RegisterViewController.swift */; };
+		28586CC820B70AA90074C97D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28586CC720B70AA90074C97D /* CreateAccountViewController.swift */; };
+		2864080B20B93D9900AC5623 /* TermsConditionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864080A20B93D9900AC5623 /* TermsConditionsViewController.swift */; };
+		2864080D20B93DD500AC5623 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864080C20B93DD500AC5623 /* PrivacyPolicyViewController.swift */; };
+		2864081B20BABFAA00AC5623 /* MoreTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864081A20BABFAA00AC5623 /* MoreTableViewController.swift */; };
+		2864081D20BABFC200AC5623 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864081C20BABFC200AC5623 /* ProfileViewController.swift */; };
+		2864081F20BABFEF00AC5623 /* NotificationVotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864081E20BABFEF00AC5623 /* NotificationVotesViewController.swift */; };
+		2864082120BAC09200AC5623 /* NotificationParoleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082020BAC09200AC5623 /* NotificationParoleViewController.swift */; };
+		2864082320BAC10700AC5623 /* SwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082220BAC10700AC5623 /* SwapViewController.swift */; };
+		2864082520BAC1DE00AC5623 /* MainTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082420BAC1DE00AC5623 /* MainTabViewController.swift */; };
+		2864082720BAC2D900AC5623 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082620BAC2D900AC5623 /* FeedViewController.swift */; };
+		2864082920BAC2F100AC5623 /* MyPhotobankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082820BAC2F100AC5623 /* MyPhotobankViewController.swift */; };
+		2864082B20BAC30700AC5623 /* MateChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082A20BAC30700AC5623 /* MateChallengeViewController.swift */; };
+		2864082D20BAC32200AC5623 /* NotificationMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082C20BAC32200AC5623 /* NotificationMainViewController.swift */; };
+		2864082F20BAC9C200AC5623 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864082E20BAC9C200AC5623 /* ForgotPasswordViewController.swift */; };
+		2864083120BB055B00AC5623 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864083020BB055B00AC5623 /* LogInViewController.swift */; };
+		2864083320BB58D400AC5623 /* UserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864083220BB58D400AC5623 /* UserInfo.swift */; };
+		2864083520BCA2B900AC5623 /* OTPVerificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864083420BCA2B900AC5623 /* OTPVerificationViewController.swift */; };
+		2864083720BCA2D200AC5623 /* ResetPasswordConfirmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2864083620BCA2D200AC5623 /* ResetPasswordConfirmViewController.swift */; };
+		2877C53820ECB49700CA905B /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877C53720ECB49700CA905B /* UserData.swift */; };
+		2877C53A20ECB94B00CA905B /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2877C53920ECB94B00CA905B /* Reachability.swift */; };
+		28866F2120F973E600310525 /* InstagramLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28866F2020F973E600310525 /* InstagramLoginViewController.swift */; };
+		28866F2320F9DB2F00310525 /* PastEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28866F2220F9DB2F00310525 /* PastEventsViewController.swift */; };
+		28866F2520F9DB5F00310525 /* SearchEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28866F2420F9DB5F00310525 /* SearchEventViewController.swift */; };
+		2891D7AF210084BA00875B16 /* ChallengeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891D7AE210084BA00875B16 /* ChallengeData.swift */; };
+		2891D7B22100889F00875B16 /* ChallengeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2891D7B12100889F00875B16 /* ChallengeTableViewCell.swift */; };
+		28D912C820D310BF004AEABB /* BuyMoreSpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912C720D310BF004AEABB /* BuyMoreSpaceViewController.swift */; };
+		28D912CC20D3ADC2004AEABB /* MyPeopleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912CB20D3ADC2004AEABB /* MyPeopleViewController.swift */; };
+		28D912D020D3C86C004AEABB /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912CF20D3C86C004AEABB /* RoundedButton.swift */; };
+		28D912D220D3CD26004AEABB /* GalleryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912D120D3CD26004AEABB /* GalleryViewController.swift */; };
+		28D912D420D43DB9004AEABB /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912D320D43DB9004AEABB /* EventsViewController.swift */; };
+		28D912D620D4BC51004AEABB /* PhotoSwapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D912D520D4BC51004AEABB /* PhotoSwapViewController.swift */; };
+		28F488ED2104BAC800249441 /* MyFriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F488EC2104BAC800249441 /* MyFriendsViewController.swift */; };
+		28F488EF2105064200249441 /* MyFriendData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28F488EE2105064200249441 /* MyFriendData.swift */; };
+		28FEEA7920DABF7B008CCDC0 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA7820DABF7B008CCDC0 /* ApiManager.swift */; };
+		28FEEA7B20DB45A5008CCDC0 /* LeftMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA7A20DB45A5008CCDC0 /* LeftMenuViewController.swift */; };
+		28FEEA7D20DB45D3008CCDC0 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA7C20DB45D3008CCDC0 /* ContainerViewController.swift */; };
+		28FEEA7F20DCE64A008CCDC0 /* CircleImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA7E20DCE64A008CCDC0 /* CircleImageView.swift */; };
+		28FEEA8220DCF8C7008CCDC0 /* CreateChallengeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA8120DCF8C7008CCDC0 /* CreateChallengeViewController.swift */; };
+		28FEEA8420DCF8E5008CCDC0 /* ChallengeInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FEEA8320DCF8E5008CCDC0 /* ChallengeInfoViewController.swift */; };
+		28FFFCE420F24C7600CC6E27 /* PhotoUploadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCE320F24C7600CC6E27 /* PhotoUploadManager.swift */; };
+		28FFFCE620F2691C00CC6E27 /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCE520F2691C00CC6E27 /* EventData.swift */; };
+		28FFFCEB20F5AE8D00CC6E27 /* Contacts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FFFCE920F5AE8D00CC6E27 /* Contacts.framework */; };
+		28FFFCEC20F5AE8D00CC6E27 /* ContactsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28FFFCEA20F5AE8D00CC6E27 /* ContactsUI.framework */; };
+		28FFFCEE20F5AED200CC6E27 /* PhoneContact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCED20F5AED200CC6E27 /* PhoneContact.swift */; };
+		28FFFCF020F5AF1300CC6E27 /* PhoneContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCEF20F5AF1300CC6E27 /* PhoneContactsManager.swift */; };
+		28FFFCF220F5B01900CC6E27 /* ContactListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF120F5B01900CC6E27 /* ContactListViewController.swift */; };
+		28FFFCF420F615EA00CC6E27 /* TimelineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF320F615EA00CC6E27 /* TimelineData.swift */; };
+		28FFFCF820F6F81900CC6E27 /* EditAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF720F6F81900CC6E27 /* EditAlbumViewController.swift */; };
+		471E74929E342C539A9C88D1 /* Pods_MateflickPhotobank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B585F0C38402F89ACBE290F /* Pods_MateflickPhotobank.framework */; };
+		80B47E8415416539461F6030 /* Pods_MateflickPhotobankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9283C815B2D4C0C2888F616E /* Pods_MateflickPhotobankTests.framework */; };
+		ED56097D937BBD66C16AF43D /* Pods_MateflickPhotobankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6934B31B52EE0D8CBC18F8CC /* Pods_MateflickPhotobankUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		28586C9A20B67E800074C97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28586C7D20B67E7C0074C97D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28586C8420B67E7C0074C97D;
+			remoteInfo = MateflickPhotobank;
+		};
+		28586CA520B67E800074C97D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 28586C7D20B67E7C0074C97D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 28586C8420B67E7C0074C97D;
+			remoteInfo = MateflickPhotobank;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		28022E6F20FEEDD8006CC278 /* SearchEventTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventTableViewCell.swift; sourceTree = "<group>"; };
+		281EE3A820EB7D4300B08E57 /* CreateEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEventViewController.swift; sourceTree = "<group>"; };
+		281EE3AB20EB97BF00B08E57 /* CreateAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAlbumViewController.swift; sourceTree = "<group>"; };
+		28402B5E20F0D8B2006CFE0F /* AlbumData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumData.swift; sourceTree = "<group>"; };
+		28402B6020F0DFBF006CFE0F /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		28402B6220F0DFC8006CFE0F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		28586C8520B67E7C0074C97D /* MateflickPhotobank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MateflickPhotobank.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		28586C8820B67E7D0074C97D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		28586C8A20B67E7D0074C97D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		28586C8D20B67E7D0074C97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		28586C8F20B67E800074C97D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		28586C9220B67E800074C97D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		28586C9420B67E800074C97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28586C9920B67E800074C97D /* MateflickPhotobankTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateflickPhotobankTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28586C9D20B67E800074C97D /* MateflickPhotobankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateflickPhotobankTests.swift; sourceTree = "<group>"; };
+		28586C9F20B67E800074C97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28586CA420B67E800074C97D /* MateflickPhotobankUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MateflickPhotobankUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		28586CA820B67E800074C97D /* MateflickPhotobankUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateflickPhotobankUITests.swift; sourceTree = "<group>"; };
+		28586CAA20B67E800074C97D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		28586CBC20B68ECA0074C97D /* GradientRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientRoundedButton.swift; sourceTree = "<group>"; };
+		28586CBE20B68FBE0074C97D /* UIViewController+Photobank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Photobank.swift"; sourceTree = "<group>"; };
+		28586CC020B6BDCD0074C97D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		28586CC220B6C1690074C97D /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		28586CC520B703370074C97D /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		28586CC720B70AA90074C97D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		2864080A20B93D9900AC5623 /* TermsConditionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsConditionsViewController.swift; sourceTree = "<group>"; };
+		2864080C20B93DD500AC5623 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		2864081A20BABFAA00AC5623 /* MoreTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreTableViewController.swift; sourceTree = "<group>"; };
+		2864081C20BABFC200AC5623 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		2864081E20BABFEF00AC5623 /* NotificationVotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVotesViewController.swift; sourceTree = "<group>"; };
+		2864082020BAC09200AC5623 /* NotificationParoleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationParoleViewController.swift; sourceTree = "<group>"; };
+		2864082220BAC10700AC5623 /* SwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewController.swift; sourceTree = "<group>"; };
+		2864082420BAC1DE00AC5623 /* MainTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabViewController.swift; sourceTree = "<group>"; };
+		2864082620BAC2D900AC5623 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		2864082820BAC2F100AC5623 /* MyPhotobankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotobankViewController.swift; sourceTree = "<group>"; };
+		2864082A20BAC30700AC5623 /* MateChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MateChallengeViewController.swift; sourceTree = "<group>"; };
+		2864082C20BAC32200AC5623 /* NotificationMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationMainViewController.swift; sourceTree = "<group>"; };
+		2864082E20BAC9C200AC5623 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
+		2864083020BB055B00AC5623 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		2864083220BB58D400AC5623 /* UserInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfo.swift; sourceTree = "<group>"; };
+		2864083420BCA2B900AC5623 /* OTPVerificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPVerificationViewController.swift; sourceTree = "<group>"; };
+		2864083620BCA2D200AC5623 /* ResetPasswordConfirmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordConfirmViewController.swift; sourceTree = "<group>"; };
+		2877C53720ECB49700CA905B /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		2877C53920ECB94B00CA905B /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		28866F2020F973E600310525 /* InstagramLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InstagramLoginViewController.swift; sourceTree = "<group>"; };
+		28866F2220F9DB2F00310525 /* PastEventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastEventsViewController.swift; sourceTree = "<group>"; };
+		28866F2420F9DB5F00310525 /* SearchEventViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchEventViewController.swift; sourceTree = "<group>"; };
+		2891D7AE210084BA00875B16 /* ChallengeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeData.swift; sourceTree = "<group>"; };
+		2891D7B12100889F00875B16 /* ChallengeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeTableViewCell.swift; sourceTree = "<group>"; };
+		2891D7C12102155D00875B16 /* MateflickPhotobank.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MateflickPhotobank.entitlements; sourceTree = "<group>"; };
+		28D912C720D310BF004AEABB /* BuyMoreSpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyMoreSpaceViewController.swift; sourceTree = "<group>"; };
+		28D912CB20D3ADC2004AEABB /* MyPeopleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPeopleViewController.swift; sourceTree = "<group>"; };
+		28D912CF20D3C86C004AEABB /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		28D912D120D3CD26004AEABB /* GalleryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GalleryViewController.swift; sourceTree = "<group>"; };
+		28D912D320D43DB9004AEABB /* EventsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsViewController.swift; sourceTree = "<group>"; };
+		28D912D520D4BC51004AEABB /* PhotoSwapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoSwapViewController.swift; sourceTree = "<group>"; };
+		28F488EC2104BAC800249441 /* MyFriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendsViewController.swift; sourceTree = "<group>"; };
+		28F488EE2105064200249441 /* MyFriendData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFriendData.swift; sourceTree = "<group>"; };
+		28FEEA7820DABF7B008CCDC0 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
+		28FEEA7A20DB45A5008CCDC0 /* LeftMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuViewController.swift; sourceTree = "<group>"; };
+		28FEEA7C20DB45D3008CCDC0 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		28FEEA7E20DCE64A008CCDC0 /* CircleImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleImageView.swift; sourceTree = "<group>"; };
+		28FEEA8120DCF8C7008CCDC0 /* CreateChallengeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewController.swift; sourceTree = "<group>"; };
+		28FEEA8320DCF8E5008CCDC0 /* ChallengeInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeInfoViewController.swift; sourceTree = "<group>"; };
+		28FFFCE320F24C7600CC6E27 /* PhotoUploadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoUploadManager.swift; sourceTree = "<group>"; };
+		28FFFCE520F2691C00CC6E27 /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		28FFFCE920F5AE8D00CC6E27 /* Contacts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Contacts.framework; path = System/Library/Frameworks/Contacts.framework; sourceTree = SDKROOT; };
+		28FFFCEA20F5AE8D00CC6E27 /* ContactsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ContactsUI.framework; path = System/Library/Frameworks/ContactsUI.framework; sourceTree = SDKROOT; };
+		28FFFCED20F5AED200CC6E27 /* PhoneContact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContact.swift; sourceTree = "<group>"; };
+		28FFFCEF20F5AF1300CC6E27 /* PhoneContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneContactsManager.swift; sourceTree = "<group>"; };
+		28FFFCF120F5B01900CC6E27 /* ContactListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactListViewController.swift; sourceTree = "<group>"; };
+		28FFFCF320F615EA00CC6E27 /* TimelineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimelineData.swift; sourceTree = "<group>"; };
+		28FFFCF720F6F81900CC6E27 /* EditAlbumViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditAlbumViewController.swift; sourceTree = "<group>"; };
+		2DEFFF4A56EEB8F85A595E1D /* Pods-MateflickPhotobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.release.xcconfig"; sourceTree = "<group>"; };
+		2FD13FA45F28D7E72931D25E /* Pods-MateflickPhotobankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4470CF00808DEA685B8531FD /* Pods-MateflickPhotobankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		52C2A20A22873574A6A756B5 /* Pods-MateflickPhotobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests.release.xcconfig"; sourceTree = "<group>"; };
+		60D9EC3FE058C9C206C2AB6E /* Pods-MateflickPhotobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.debug.xcconfig"; sourceTree = "<group>"; };
+		6673619852BEF90B62ED7FB2 /* Pods-MateflickPhotobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6934B31B52EE0D8CBC18F8CC /* Pods_MateflickPhotobankUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MateflickPhotobankUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B585F0C38402F89ACBE290F /* Pods_MateflickPhotobank.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MateflickPhotobank.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9283C815B2D4C0C2888F616E /* Pods_MateflickPhotobankTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MateflickPhotobankTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		28586C8220B67E7C0074C97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28FFFCEB20F5AE8D00CC6E27 /* Contacts.framework in Frameworks */,
+				28FFFCEC20F5AE8D00CC6E27 /* ContactsUI.framework in Frameworks */,
+				28402B6320F0DFC8006CFE0F /* AVFoundation.framework in Frameworks */,
+				28402B6120F0DFBF006CFE0F /* Photos.framework in Frameworks */,
+				471E74929E342C539A9C88D1 /* Pods_MateflickPhotobank.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586C9620B67E800074C97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80B47E8415416539461F6030 /* Pods_MateflickPhotobankTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586CA120B67E800074C97D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED56097D937BBD66C16AF43D /* Pods_MateflickPhotobankUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C88B98528687A3C61C97CCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				28FFFCE920F5AE8D00CC6E27 /* Contacts.framework */,
+				28FFFCEA20F5AE8D00CC6E27 /* ContactsUI.framework */,
+				28402B6220F0DFC8006CFE0F /* AVFoundation.framework */,
+				28402B6020F0DFBF006CFE0F /* Photos.framework */,
+				7B585F0C38402F89ACBE290F /* Pods_MateflickPhotobank.framework */,
+				9283C815B2D4C0C2888F616E /* Pods_MateflickPhotobankTests.framework */,
+				6934B31B52EE0D8CBC18F8CC /* Pods_MateflickPhotobankUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		28022E6E20FEEDAF006CC278 /* SearchEventTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				28022E6F20FEEDD8006CC278 /* SearchEventTableViewCell.swift */,
+			);
+			path = SearchEventTableViewCell;
+			sourceTree = "<group>";
+		};
+		281EE3A720EB7CFC00B08E57 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				28D912D320D43DB9004AEABB /* EventsViewController.swift */,
+				281EE3A820EB7D4300B08E57 /* CreateEventViewController.swift */,
+				28866F2220F9DB2F00310525 /* PastEventsViewController.swift */,
+				28866F2420F9DB5F00310525 /* SearchEventViewController.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		281EE3AA20EB97AC00B08E57 /* Album */ = {
+			isa = PBXGroup;
+			children = (
+				28D912D120D3CD26004AEABB /* GalleryViewController.swift */,
+				281EE3AB20EB97BF00B08E57 /* CreateAlbumViewController.swift */,
+				28FFFCF720F6F81900CC6E27 /* EditAlbumViewController.swift */,
+			);
+			path = Album;
+			sourceTree = "<group>";
+		};
+		28586C7C20B67E7C0074C97D = {
+			isa = PBXGroup;
+			children = (
+				28586C8720B67E7C0074C97D /* MateflickPhotobank */,
+				28586C9C20B67E800074C97D /* MateflickPhotobankTests */,
+				28586CA720B67E800074C97D /* MateflickPhotobankUITests */,
+				28586C8620B67E7C0074C97D /* Products */,
+				5A87458E1F8A33543A0348F1 /* Pods */,
+				0C88B98528687A3C61C97CCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		28586C8620B67E7C0074C97D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28586C8520B67E7C0074C97D /* MateflickPhotobank.app */,
+				28586C9920B67E800074C97D /* MateflickPhotobankTests.xctest */,
+				28586CA420B67E800074C97D /* MateflickPhotobankUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		28586C8720B67E7C0074C97D /* MateflickPhotobank */ = {
+			isa = PBXGroup;
+			children = (
+				2891D7C12102155D00875B16 /* MateflickPhotobank.entitlements */,
+				28586CBA20B67F080074C97D /* Controllers */,
+				28586CBB20B67F080074C97D /* Custom */,
+				28586CB920B67F080074C97D /* Global */,
+				28586CB720B67F080074C97D /* Models */,
+				28586CB820B67F080074C97D /* Storyboards */,
+				28586CB620B67F080074C97D /* Views */,
+				28586C8A20B67E7D0074C97D /* ViewController.swift */,
+				28586C8820B67E7D0074C97D /* AppDelegate.swift */,
+				28586C8F20B67E800074C97D /* Assets.xcassets */,
+				28586C9420B67E800074C97D /* Info.plist */,
+			);
+			path = MateflickPhotobank;
+			sourceTree = "<group>";
+		};
+		28586C9C20B67E800074C97D /* MateflickPhotobankTests */ = {
+			isa = PBXGroup;
+			children = (
+				28586C9D20B67E800074C97D /* MateflickPhotobankTests.swift */,
+				28586C9F20B67E800074C97D /* Info.plist */,
+			);
+			path = MateflickPhotobankTests;
+			sourceTree = "<group>";
+		};
+		28586CA720B67E800074C97D /* MateflickPhotobankUITests */ = {
+			isa = PBXGroup;
+			children = (
+				28586CA820B67E800074C97D /* MateflickPhotobankUITests.swift */,
+				28586CAA20B67E800074C97D /* Info.plist */,
+			);
+			path = MateflickPhotobankUITests;
+			sourceTree = "<group>";
+		};
+		28586CB620B67F080074C97D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2891D7B0210087F600875B16 /* ChallegeTableViewCell */,
+				28022E6E20FEEDAF006CC278 /* SearchEventTableViewCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		28586CB720B67F080074C97D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2877C53720ECB49700CA905B /* UserData.swift */,
+				28402B5E20F0D8B2006CFE0F /* AlbumData.swift */,
+				28FFFCE520F2691C00CC6E27 /* EventData.swift */,
+				28FFFCED20F5AED200CC6E27 /* PhoneContact.swift */,
+				28FFFCF320F615EA00CC6E27 /* TimelineData.swift */,
+				2891D7AE210084BA00875B16 /* ChallengeData.swift */,
+				28F488EE2105064200249441 /* MyFriendData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		28586CB820B67F080074C97D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				28586C8C20B67E7D0074C97D /* Main.storyboard */,
+				28586C9120B67E800074C97D /* LaunchScreen.storyboard */,
+				28586CC220B6C1690074C97D /* Auth.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		28586CB920B67F080074C97D /* Global */ = {
+			isa = PBXGroup;
+			children = (
+				28586CBE20B68FBE0074C97D /* UIViewController+Photobank.swift */,
+				28586CC020B6BDCD0074C97D /* Constants.swift */,
+				2864083220BB58D400AC5623 /* UserInfo.swift */,
+				28FEEA7820DABF7B008CCDC0 /* ApiManager.swift */,
+				28FFFCE320F24C7600CC6E27 /* PhotoUploadManager.swift */,
+				28FFFCEF20F5AF1300CC6E27 /* PhoneContactsManager.swift */,
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		28586CBA20B67F080074C97D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2864081420BABF3A00AC5623 /* Home */,
+				28586CC420B7030D0074C97D /* Auth */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		28586CBB20B67F080074C97D /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				28586CBC20B68ECA0074C97D /* GradientRoundedButton.swift */,
+				28D912CF20D3C86C004AEABB /* RoundedButton.swift */,
+				28FEEA7E20DCE64A008CCDC0 /* CircleImageView.swift */,
+				2877C53920ECB94B00CA905B /* Reachability.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		28586CC420B7030D0074C97D /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				28866F2020F973E600310525 /* InstagramLoginViewController.swift */,
+				28586CC520B703370074C97D /* RegisterViewController.swift */,
+				28586CC720B70AA90074C97D /* CreateAccountViewController.swift */,
+				2864080A20B93D9900AC5623 /* TermsConditionsViewController.swift */,
+				2864080C20B93DD500AC5623 /* PrivacyPolicyViewController.swift */,
+				2864082E20BAC9C200AC5623 /* ForgotPasswordViewController.swift */,
+				2864083020BB055B00AC5623 /* LogInViewController.swift */,
+				2864083420BCA2B900AC5623 /* OTPVerificationViewController.swift */,
+				2864083620BCA2D200AC5623 /* ResetPasswordConfirmViewController.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		2864081420BABF3A00AC5623 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2864081920BABF6700AC5623 /* Swap */,
+				2864081820BABF5E00AC5623 /* Profile */,
+				2864081720BABF5500AC5623 /* More */,
+				2864081620BABF4D00AC5623 /* Notifications */,
+				2864081520BABF4500AC5623 /* Feed */,
+				2864082420BAC1DE00AC5623 /* MainTabViewController.swift */,
+				28FEEA7A20DB45A5008CCDC0 /* LeftMenuViewController.swift */,
+				28FEEA7C20DB45D3008CCDC0 /* ContainerViewController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2864081520BABF4500AC5623 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				28F488EB2104BAB200249441 /* My Friend */,
+				281EE3AA20EB97AC00B08E57 /* Album */,
+				281EE3A720EB7CFC00B08E57 /* Event */,
+				28FEEA8020DCF8A7008CCDC0 /* Challenge */,
+				2864082620BAC2D900AC5623 /* FeedViewController.swift */,
+				2864082820BAC2F100AC5623 /* MyPhotobankViewController.swift */,
+				28D912C720D310BF004AEABB /* BuyMoreSpaceViewController.swift */,
+				28D912CB20D3ADC2004AEABB /* MyPeopleViewController.swift */,
+				28D912D520D4BC51004AEABB /* PhotoSwapViewController.swift */,
+				28FFFCF120F5B01900CC6E27 /* ContactListViewController.swift */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		2864081620BABF4D00AC5623 /* Notifications */ = {
+			isa = PBXGroup;
+			children = (
+				2864081E20BABFEF00AC5623 /* NotificationVotesViewController.swift */,
+				2864082020BAC09200AC5623 /* NotificationParoleViewController.swift */,
+				2864082C20BAC32200AC5623 /* NotificationMainViewController.swift */,
+			);
+			path = Notifications;
+			sourceTree = "<group>";
+		};
+		2864081720BABF5500AC5623 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				2864081A20BABFAA00AC5623 /* MoreTableViewController.swift */,
+			);
+			path = More;
+			sourceTree = "<group>";
+		};
+		2864081820BABF5E00AC5623 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				2864081C20BABFC200AC5623 /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2864081920BABF6700AC5623 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				2864082220BAC10700AC5623 /* SwapViewController.swift */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		2891D7B0210087F600875B16 /* ChallegeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				2891D7B12100889F00875B16 /* ChallengeTableViewCell.swift */,
+			);
+			path = ChallegeTableViewCell;
+			sourceTree = "<group>";
+		};
+		28F488EB2104BAB200249441 /* My Friend */ = {
+			isa = PBXGroup;
+			children = (
+				28F488EC2104BAC800249441 /* MyFriendsViewController.swift */,
+			);
+			path = "My Friend";
+			sourceTree = "<group>";
+		};
+		28FEEA8020DCF8A7008CCDC0 /* Challenge */ = {
+			isa = PBXGroup;
+			children = (
+				2864082A20BAC30700AC5623 /* MateChallengeViewController.swift */,
+				28FEEA8120DCF8C7008CCDC0 /* CreateChallengeViewController.swift */,
+				28FEEA8320DCF8E5008CCDC0 /* ChallengeInfoViewController.swift */,
+			);
+			path = Challenge;
+			sourceTree = "<group>";
+		};
+		5A87458E1F8A33543A0348F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60D9EC3FE058C9C206C2AB6E /* Pods-MateflickPhotobank.debug.xcconfig */,
+				2DEFFF4A56EEB8F85A595E1D /* Pods-MateflickPhotobank.release.xcconfig */,
+				6673619852BEF90B62ED7FB2 /* Pods-MateflickPhotobankTests.debug.xcconfig */,
+				52C2A20A22873574A6A756B5 /* Pods-MateflickPhotobankTests.release.xcconfig */,
+				2FD13FA45F28D7E72931D25E /* Pods-MateflickPhotobankUITests.debug.xcconfig */,
+				4470CF00808DEA685B8531FD /* Pods-MateflickPhotobankUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		28586C8420B67E7C0074C97D /* MateflickPhotobank */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28586CAD20B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobank" */;
+			buildPhases = (
+				A6CED35768D2A3446B22FC65 /* [CP] Check Pods Manifest.lock */,
+				28586C8120B67E7C0074C97D /* Sources */,
+				28586C8220B67E7C0074C97D /* Frameworks */,
+				28586C8320B67E7C0074C97D /* Resources */,
+				003CE6C0DDDCE3849F975665 /* [CP] Embed Pods Frameworks */,
+				9EE827C698A4045129E482C9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MateflickPhotobank;
+			productName = MateflickPhotobank;
+			productReference = 28586C8520B67E7C0074C97D /* MateflickPhotobank.app */;
+			productType = "com.apple.product-type.application";
+		};
+		28586C9820B67E800074C97D /* MateflickPhotobankTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28586CB020B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobankTests" */;
+			buildPhases = (
+				6933F9799E6CD36D58044F28 /* [CP] Check Pods Manifest.lock */,
+				28586C9520B67E800074C97D /* Sources */,
+				28586C9620B67E800074C97D /* Frameworks */,
+				28586C9720B67E800074C97D /* Resources */,
+				7DDCFC33B638FAB3975196A4 /* [CP] Embed Pods Frameworks */,
+				59B3B34BB3EA9136C4348413 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28586C9B20B67E800074C97D /* PBXTargetDependency */,
+			);
+			name = MateflickPhotobankTests;
+			productName = MateflickPhotobankTests;
+			productReference = 28586C9920B67E800074C97D /* MateflickPhotobankTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		28586CA320B67E800074C97D /* MateflickPhotobankUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 28586CB320B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobankUITests" */;
+			buildPhases = (
+				8D4983FC0B860240A422EE43 /* [CP] Check Pods Manifest.lock */,
+				28586CA020B67E800074C97D /* Sources */,
+				28586CA120B67E800074C97D /* Frameworks */,
+				28586CA220B67E800074C97D /* Resources */,
+				25ED2C7E576B6403CC5A1825 /* [CP] Embed Pods Frameworks */,
+				8F9FDEDDC3BBBED269564649 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				28586CA620B67E800074C97D /* PBXTargetDependency */,
+			);
+			name = MateflickPhotobankUITests;
+			productName = MateflickPhotobankUITests;
+			productReference = 28586CA420B67E800074C97D /* MateflickPhotobankUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		28586C7D20B67E7C0074C97D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = MateFlick;
+				TargetAttributes = {
+					28586C8420B67E7C0074C97D = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					28586C9820B67E800074C97D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 28586C8420B67E7C0074C97D;
+					};
+					28586CA320B67E800074C97D = {
+						CreatedOnToolsVersion = 9.3;
+						TestTargetID = 28586C8420B67E7C0074C97D;
+					};
+				};
+			};
+			buildConfigurationList = 28586C8020B67E7C0074C97D /* Build configuration list for PBXProject "MateflickPhotobank" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 28586C7C20B67E7C0074C97D;
+			productRefGroup = 28586C8620B67E7C0074C97D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				28586C8420B67E7C0074C97D /* MateflickPhotobank */,
+				28586C9820B67E800074C97D /* MateflickPhotobankTests */,
+				28586CA320B67E800074C97D /* MateflickPhotobankUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		28586C8320B67E7C0074C97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28586CC320B6C1690074C97D /* Auth.storyboard in Resources */,
+				28586C9320B67E800074C97D /* LaunchScreen.storyboard in Resources */,
+				28586C9020B67E800074C97D /* Assets.xcassets in Resources */,
+				28586C8E20B67E7D0074C97D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586C9720B67E800074C97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586CA220B67E800074C97D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003CE6C0DDDCE3849F975665 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AssetsPickerViewController/AssetsPickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/Bolts/Bolts.framework",
+				"${BUILT_PRODUCTS_DIR}/CHIPageControl/CHIPageControl.framework",
+				"${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework",
+				"${BUILT_PRODUCTS_DIR}/DatePickerDialog/DatePickerDialog.framework",
+				"${BUILT_PRODUCTS_DIR}/Device/Device.framework",
+				"${BUILT_PRODUCTS_DIR}/Dimmer/Dimmer.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKCoreKit/FBSDKCoreKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FBSDKLoginKit/FBSDKLoginKit.framework",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookCore/FacebookCore.framework",
+				"${BUILT_PRODUCTS_DIR}/FacebookLogin/FacebookLogin.framework",
+				"${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework",
+				"${BUILT_PRODUCTS_DIR}/LocationPickerViewController/LocationPickerViewController.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SkyFloatingLabelTextField/SkyFloatingLabelTextField.framework",
+				"${BUILT_PRODUCTS_DIR}/SlideMenuControllerSwift/SlideMenuControllerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftARGB/SwiftARGB.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftInstagram/SwiftInstagram.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+				"${BUILT_PRODUCTS_DIR}/TinyLog/TinyLog.framework",
+				"${BUILT_PRODUCTS_DIR}/Toast-Swift/Toast_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/UITextView+Placeholder/UITextView_Placeholder.framework",
+				"${BUILT_PRODUCTS_DIR}/UIViewKVO/UIViewKVO.framework",
+				"${BUILT_PRODUCTS_DIR}/XLPagerTabStrip/XLPagerTabStrip.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AssetsPickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Bolts.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CHIPageControl.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CountryPickerView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DatePickerDialog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Device.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Dimmer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKCoreKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSDKLoginKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookCore.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FacebookLogin.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FadeView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocationPickerViewController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SkyFloatingLabelTextField.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SlideMenuControllerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftARGB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftInstagram.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TinyLog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Toast_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UITextView_Placeholder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/UIViewKVO.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLPagerTabStrip.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25ED2C7E576B6403CC5A1825 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59B3B34BB3EA9136C4348413 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6933F9799E6CD36D58044F28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MateflickPhotobankTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7DDCFC33B638FAB3975196A4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D4983FC0B860240A422EE43 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MateflickPhotobankUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F9FDEDDC3BBBED269564649 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EE827C698A4045129E482C9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6CED35768D2A3446B22FC65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MateflickPhotobank-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		28586C8120B67E7C0074C97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2877C53820ECB49700CA905B /* UserData.swift in Sources */,
+				28586CC820B70AA90074C97D /* CreateAccountViewController.swift in Sources */,
+				28D912D220D3CD26004AEABB /* GalleryViewController.swift in Sources */,
+				28586CC120B6BDCD0074C97D /* Constants.swift in Sources */,
+				28D912D420D43DB9004AEABB /* EventsViewController.swift in Sources */,
+				28FFFCF220F5B01900CC6E27 /* ContactListViewController.swift in Sources */,
+				281EE3A920EB7D4300B08E57 /* CreateEventViewController.swift in Sources */,
+				28FFFCF020F5AF1300CC6E27 /* PhoneContactsManager.swift in Sources */,
+				28022E7020FEEDD8006CC278 /* SearchEventTableViewCell.swift in Sources */,
+				2864080B20B93D9900AC5623 /* TermsConditionsViewController.swift in Sources */,
+				28F488ED2104BAC800249441 /* MyFriendsViewController.swift in Sources */,
+				28FFFCEE20F5AED200CC6E27 /* PhoneContact.swift in Sources */,
+				2864081F20BABFEF00AC5623 /* NotificationVotesViewController.swift in Sources */,
+				28D912C820D310BF004AEABB /* BuyMoreSpaceViewController.swift in Sources */,
+				28586C8B20B67E7D0074C97D /* ViewController.swift in Sources */,
+				28FEEA7F20DCE64A008CCDC0 /* CircleImageView.swift in Sources */,
+				28FFFCF820F6F81900CC6E27 /* EditAlbumViewController.swift in Sources */,
+				2864082520BAC1DE00AC5623 /* MainTabViewController.swift in Sources */,
+				28FEEA8420DCF8E5008CCDC0 /* ChallengeInfoViewController.swift in Sources */,
+				28FEEA8220DCF8C7008CCDC0 /* CreateChallengeViewController.swift in Sources */,
+				2864083720BCA2D200AC5623 /* ResetPasswordConfirmViewController.swift in Sources */,
+				2891D7AF210084BA00875B16 /* ChallengeData.swift in Sources */,
+				28866F2320F9DB2F00310525 /* PastEventsViewController.swift in Sources */,
+				2864082720BAC2D900AC5623 /* FeedViewController.swift in Sources */,
+				2864082920BAC2F100AC5623 /* MyPhotobankViewController.swift in Sources */,
+				2864081B20BABFAA00AC5623 /* MoreTableViewController.swift in Sources */,
+				2864082B20BAC30700AC5623 /* MateChallengeViewController.swift in Sources */,
+				28586C8920B67E7D0074C97D /* AppDelegate.swift in Sources */,
+				2891D7B22100889F00875B16 /* ChallengeTableViewCell.swift in Sources */,
+				28D912D020D3C86C004AEABB /* RoundedButton.swift in Sources */,
+				28FFFCE620F2691C00CC6E27 /* EventData.swift in Sources */,
+				2864082D20BAC32200AC5623 /* NotificationMainViewController.swift in Sources */,
+				2864081D20BABFC200AC5623 /* ProfileViewController.swift in Sources */,
+				2864083520BCA2B900AC5623 /* OTPVerificationViewController.swift in Sources */,
+				28586CC620B703370074C97D /* RegisterViewController.swift in Sources */,
+				281EE3AC20EB97BF00B08E57 /* CreateAlbumViewController.swift in Sources */,
+				2864082320BAC10700AC5623 /* SwapViewController.swift in Sources */,
+				2864080D20B93DD500AC5623 /* PrivacyPolicyViewController.swift in Sources */,
+				28FEEA7B20DB45A5008CCDC0 /* LeftMenuViewController.swift in Sources */,
+				2864082F20BAC9C200AC5623 /* ForgotPasswordViewController.swift in Sources */,
+				2864083120BB055B00AC5623 /* LogInViewController.swift in Sources */,
+				28FEEA7D20DB45D3008CCDC0 /* ContainerViewController.swift in Sources */,
+				28D912CC20D3ADC2004AEABB /* MyPeopleViewController.swift in Sources */,
+				28586CBF20B68FBE0074C97D /* UIViewController+Photobank.swift in Sources */,
+				28866F2520F9DB5F00310525 /* SearchEventViewController.swift in Sources */,
+				28F488EF2105064200249441 /* MyFriendData.swift in Sources */,
+				28D912D620D4BC51004AEABB /* PhotoSwapViewController.swift in Sources */,
+				28866F2120F973E600310525 /* InstagramLoginViewController.swift in Sources */,
+				28FFFCF420F615EA00CC6E27 /* TimelineData.swift in Sources */,
+				28FFFCE420F24C7600CC6E27 /* PhotoUploadManager.swift in Sources */,
+				28586CBD20B68ECA0074C97D /* GradientRoundedButton.swift in Sources */,
+				28402B5F20F0D8B2006CFE0F /* AlbumData.swift in Sources */,
+				2864083320BB58D400AC5623 /* UserInfo.swift in Sources */,
+				28FEEA7920DABF7B008CCDC0 /* ApiManager.swift in Sources */,
+				2877C53A20ECB94B00CA905B /* Reachability.swift in Sources */,
+				2864082120BAC09200AC5623 /* NotificationParoleViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586C9520B67E800074C97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28586C9E20B67E800074C97D /* MateflickPhotobankTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		28586CA020B67E800074C97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28586CA920B67E800074C97D /* MateflickPhotobankUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		28586C9B20B67E800074C97D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28586C8420B67E7C0074C97D /* MateflickPhotobank */;
+			targetProxy = 28586C9A20B67E800074C97D /* PBXContainerItemProxy */;
+		};
+		28586CA620B67E800074C97D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 28586C8420B67E7C0074C97D /* MateflickPhotobank */;
+			targetProxy = 28586CA520B67E800074C97D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		28586C8C20B67E7D0074C97D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28586C8D20B67E7D0074C97D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		28586C9120B67E800074C97D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				28586C9220B67E800074C97D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		28586CAB20B67E800074C97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		28586CAC20B67E800074C97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		28586CAE20B67E800074C97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 60D9EC3FE058C9C206C2AB6E /* Pods-MateflickPhotobank.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MateflickPhotobank/MateflickPhotobank.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H72P5HP446;
+				INFOPLIST_FILE = MateflickPhotobank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raindropsinfotech.Mateflicks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		28586CAF20B67E800074C97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DEFFF4A56EEB8F85A595E1D /* Pods-MateflickPhotobank.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MateflickPhotobank/MateflickPhotobank.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H72P5HP446;
+				INFOPLIST_FILE = MateflickPhotobank/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.raindropsinfotech.Mateflicks;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		28586CB120B67E800074C97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6673619852BEF90B62ED7FB2 /* Pods-MateflickPhotobankTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MateflickPhotobankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Panda.MateflickPhotobankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MateflickPhotobank.app/MateflickPhotobank";
+			};
+			name = Debug;
+		};
+		28586CB220B67E800074C97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52C2A20A22873574A6A756B5 /* Pods-MateflickPhotobankTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MateflickPhotobankTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Panda.MateflickPhotobankTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MateflickPhotobank.app/MateflickPhotobank";
+			};
+			name = Release;
+		};
+		28586CB420B67E800074C97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FD13FA45F28D7E72931D25E /* Pods-MateflickPhotobankUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MateflickPhotobankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Panda.MateflickPhotobankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MateflickPhotobank;
+			};
+			name = Debug;
+		};
+		28586CB520B67E800074C97D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4470CF00808DEA685B8531FD /* Pods-MateflickPhotobankUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MateflickPhotobankUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Panda.MateflickPhotobankUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MateflickPhotobank;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		28586C8020B67E7C0074C97D /* Build configuration list for PBXProject "MateflickPhotobank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28586CAB20B67E800074C97D /* Debug */,
+				28586CAC20B67E800074C97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28586CAD20B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobank" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28586CAE20B67E800074C97D /* Debug */,
+				28586CAF20B67E800074C97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28586CB020B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobankTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28586CB120B67E800074C97D /* Debug */,
+				28586CB220B67E800074C97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		28586CB320B67E800074C97D /* Build configuration list for PBXNativeTarget "MateflickPhotobankUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				28586CB420B67E800074C97D /* Debug */,
+				28586CB520B67E800074C97D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 28586C7D20B67E7C0074C97D /* Project object */;
+}
