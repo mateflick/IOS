@@ -16,7 +16,7 @@ class ApiManager: NSObject {
         return instance
     }()
     
-    let baseURL         = "http://139.59.125.227:3000/"
+    let baseURL         = "https://mateflick.herokuapp.com/"
     let userLogin       = "user/login"
     let userRegister    = "user/register"
     let userProfile     = "user/profile"
