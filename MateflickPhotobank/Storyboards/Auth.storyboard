@@ -36,13 +36,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="v8O-Vx-gYv">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="778"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b2R-XE-yWb">
-                                <rect key="frame" x="0.0" y="44" width="375" height="734"/>
+                                <rect key="frame" x="0.0" y="44" width="375" height="768"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aH0-dz-Mp4">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="734"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O7S-zL-a9L">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="624"/>
@@ -201,8 +201,8 @@
                             <constraint firstItem="Xxu-vR-GMZ" firstAttribute="trailing" secondItem="b2R-XE-yWb" secondAttribute="trailing" id="Dcq-Fn-XdJ"/>
                             <constraint firstItem="v8O-Vx-gYv" firstAttribute="top" secondItem="Zi2-0Z-HSR" secondAttribute="top" id="H0G-Do-LoJ"/>
                             <constraint firstItem="b2R-XE-yWb" firstAttribute="leading" secondItem="Xxu-vR-GMZ" secondAttribute="leading" id="O8r-jL-syc"/>
-                            <constraint firstItem="Xxu-vR-GMZ" firstAttribute="bottom" secondItem="v8O-Vx-gYv" secondAttribute="bottom" id="kL2-4p-ORc"/>
-                            <constraint firstItem="Xxu-vR-GMZ" firstAttribute="bottom" secondItem="b2R-XE-yWb" secondAttribute="bottom" id="q9V-Fn-H9o"/>
+                            <constraint firstAttribute="bottom" secondItem="v8O-Vx-gYv" secondAttribute="bottom" id="kL2-4p-ORc"/>
+                            <constraint firstAttribute="bottom" secondItem="b2R-XE-yWb" secondAttribute="bottom" id="q9V-Fn-H9o"/>
                             <constraint firstItem="v8O-Vx-gYv" firstAttribute="leading" secondItem="Xxu-vR-GMZ" secondAttribute="leading" id="zzK-yY-zvd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Xxu-vR-GMZ"/>

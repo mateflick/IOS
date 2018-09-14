@@ -29,6 +29,10 @@ class ViewController: UIViewController {
         self.navigationController?.pushViewController(loginVC, animated: true)
     }
     
+    override func prefersHomeIndicatorAutoHidden() -> Bool {
+        return true
+    }
+    
     @IBAction func loginWithFacebook(_ sender: Any) {
         if FBSDKAccessToken.currentAccessTokenIsActive() { // Already logged in
             let accessToken = FBSDKAccessToken.current()

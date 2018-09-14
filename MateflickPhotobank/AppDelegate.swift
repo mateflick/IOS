@@ -29,12 +29,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let mainStoryboard = UIStoryboard.init(name: Storyboard.main, bundle: nil)
         
         var rootViewController : UIViewController!
-        if isAlreadyLoggedIn() {
-            rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "MainTabVC")
-        }
-        else{
-            rootViewController = authStoryboard.instantiateViewController(withIdentifier: "authNavController")
-        }
+        rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "StarterViewControllerID")
+        
+//        if isAlreadyLoggedIn() {
+//            rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "ContainerVC")
+//        }
+//        else{
+//            rootViewController = authStoryboard.instantiateViewController(withIdentifier: "authNavController")
+//        }
         
         self.window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
@@ -133,7 +135,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // Check if user already logged in
     func isAlreadyLoggedIn() -> Bool {
+//        return false
         return UserDefaults.standard.bool(forKey: KEY_ISLOGIN)
     }
+    
 }
 

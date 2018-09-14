@@ -74,6 +74,7 @@
 		28FFFCF420F615EA00CC6E27 /* TimelineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF320F615EA00CC6E27 /* TimelineData.swift */; };
 		28FFFCF820F6F81900CC6E27 /* EditAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF720F6F81900CC6E27 /* EditAlbumViewController.swift */; };
 		471E74929E342C539A9C88D1 /* Pods_MateflickPhotobank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B585F0C38402F89ACBE290F /* Pods_MateflickPhotobank.framework */; };
+		4FE0B0D2214AB0E700589238 /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0B0D1214AB0E700589238 /* StarterViewController.swift */; };
 		80B47E8415416539461F6030 /* Pods_MateflickPhotobankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9283C815B2D4C0C2888F616E /* Pods_MateflickPhotobankTests.framework */; };
 		ED56097D937BBD66C16AF43D /* Pods_MateflickPhotobankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6934B31B52EE0D8CBC18F8CC /* Pods_MateflickPhotobankUITests.framework */; };
 /* End PBXBuildFile section */
@@ -172,6 +173,7 @@
 		2DEFFF4A56EEB8F85A595E1D /* Pods-MateflickPhotobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.release.xcconfig"; sourceTree = "<group>"; };
 		2FD13FA45F28D7E72931D25E /* Pods-MateflickPhotobankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4470CF00808DEA685B8531FD /* Pods-MateflickPhotobankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4FE0B0D1214AB0E700589238 /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
 		52C2A20A22873574A6A756B5 /* Pods-MateflickPhotobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		60D9EC3FE058C9C206C2AB6E /* Pods-MateflickPhotobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.debug.xcconfig"; sourceTree = "<group>"; };
 		6673619852BEF90B62ED7FB2 /* Pods-MateflickPhotobankTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -406,6 +408,7 @@
 				2864082420BAC1DE00AC5623 /* MainTabViewController.swift */,
 				28FEEA7A20DB45A5008CCDC0 /* LeftMenuViewController.swift */,
 				28FEEA7C20DB45D3008CCDC0 /* ContainerViewController.swift */,
+				4FE0B0D1214AB0E700589238 /* StarterViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -578,6 +581,9 @@
 					28586C8420B67E7C0074C97D = {
 						CreatedOnToolsVersion = 9.3;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -881,6 +887,7 @@
 				28866F2320F9DB2F00310525 /* PastEventsViewController.swift in Sources */,
 				2864082720BAC2D900AC5623 /* FeedViewController.swift in Sources */,
 				2864082920BAC2F100AC5623 /* MyPhotobankViewController.swift in Sources */,
+				4FE0B0D2214AB0E700589238 /* StarterViewController.swift in Sources */,
 				2864081B20BABFAA00AC5623 /* MoreTableViewController.swift in Sources */,
 				2864082B20BAC30700AC5623 /* MateChallengeViewController.swift in Sources */,
 				28586C8920B67E7D0074C97D /* AppDelegate.swift in Sources */,
@@ -1087,14 +1094,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MateflickPhotobank/MateflickPhotobank.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H72P5HP446;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raindropsinfotech.Mateflicks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchmoon.mateflick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1108,14 +1115,14 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MateflickPhotobank/MateflickPhotobank.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = H72P5HP446;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobank/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.raindropsinfotech.Mateflicks;
+				PRODUCT_BUNDLE_IDENTIFIER = com.touchmoon.mateflick;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1129,6 +1136,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1150,6 +1158,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobankTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1170,6 +1179,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobankUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1190,6 +1200,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XF4Z5H9FX4;
 				INFOPLIST_FILE = MateflickPhotobankUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -58,6 +58,10 @@
 	<string>Mateflick needs to access your current location for Event and Album</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>Mateflick needs to access your photo library to upload images</string>
+	<key>UIBackgroundModes</key>
+	<array>
+		<string>remote-notification</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

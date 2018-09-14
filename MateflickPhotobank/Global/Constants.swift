@@ -28,6 +28,12 @@ public enum AccountType : Int {
 let deviceTyoe : Int = 1 // iPhone
 
 let KEY_ISLOGIN : String            = "is_loggedin"
+let KEY_UID : String                = "cruid"
+let KEY_PWD : String                = "crpwd"
+let KEY_ACCTYPE : String            = "acctype"
+let KEY_USRTYPE : String            = "usrtype"
+
+
 let KEY_IS_REMEMBER                 = "is_remember_me"
 
 let MSG_TERMS_CONDITION : String    = "I have read and agree to the Terms & Conditions and the Privacy Policy of Mateflick"

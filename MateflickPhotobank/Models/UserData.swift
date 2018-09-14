@@ -56,6 +56,8 @@ class UserData: NSObject {
          }
          */
         
+        super.init()
+        
         self.userId         = data["_id"].stringValue
         self.firstName      = data["FirstName"].stringValue
         self.lastName       = data["SurName"].stringValue
@@ -74,5 +76,56 @@ class UserData: NSObject {
             self.userImage = imageId
         }
         self.usedSpace      = data["UsedSpace"].intValue
+        
+        
+//        let testJSON = JSON([
+//            "_id": self.userId,
+//            "FirstName": self.firstName,
+//            "SurName": self.lastName,
+//            "EmailAddress": email,
+//            "Mobile": self.mobile,
+//            "UserType": self.type.rawValue,
+//            "DateOfBirth": self.birthday,
+//            "CompanyName": self.company,
+//            "Token": self.token,
+//
+//        ])
+//
+    }
+    
+    func fillFromJSON(_ data: JSON) -> Void {
+        self.userId         = data["_id"].stringValue
+        self.firstName      = data["FirstName"].stringValue
+        self.lastName       = data["SurName"].stringValue
+        self.email          = data["EmailAddress"].stringValue
+        self.mobile         = data["Mobile"].stringValue
+        self.type           = UserType(rawValue: data["UserType"].intValue)
+        self.birthday       = data["DateOfBirth"].string
+        self.company        = data["CompanyName"].string
+        self.token          = data["Token"].string
+        
+        self.followers      = data["FollowersCount"].intValue
+        self.followings     = data["FollowingsCount"].intValue
+        self.photos         = data["PhotoCount"].intValue
+        self.skills         = data["Skills"].intValue
+        if let imageId = data["UserImage"].string {
+            self.userImage = imageId
+        }
+        self.usedSpace      = data["UsedSpace"].intValue
+    }
+    
+    func returnJSON() -> JSON {
+        let json: JSON = JSON(self)
+        return json
+    }
+    
+    func saveToUserDefaults() {
+        let archData = NSKeyedArchiver.archivedData(withRootObject: self)
+        UserDefaults.standard.set(archData, forKey: "userData")
+    }
+    
+    func loadFromUserDefaults() -> Void {
+        let archData = UserDefaults.standard.object(forKey: "userData")
+        
     }
 }

@@ -81,6 +81,14 @@ class UserInfo: NSObject {
             if user != nil {
                 self.userdata = user!
                 self.userId = user!.userId
+                
+                UserDefaults.standard.set(params["EmailAddress"], forKey: KEY_UID)
+                UserDefaults.standard.set(params["Password"], forKey: KEY_PWD)
+                UserDefaults.standard.set(params["AccountType"] as! Int, forKey: KEY_ACCTYPE)
+                UserDefaults.standard.set(params["UserType"] as! Int, forKey: KEY_USRTYPE)
+
+                UserDefaults.standard.set(true, forKey: KEY_ISLOGIN)
+
                 complete(true, nil)
             }
             else{
@@ -95,6 +103,14 @@ class UserInfo: NSObject {
             if user != nil {
                 self.userdata = user!
                 self.userId = user!.userId
+                
+                UserDefaults.standard.set(params["Id"], forKey: KEY_UID)
+                UserDefaults.standard.set(params["Password"], forKey: KEY_PWD)
+                UserDefaults.standard.set(params["AccountType"] as! Int, forKey: KEY_ACCTYPE)
+                UserDefaults.standard.set(params["UserType"] as! Int, forKey: KEY_USRTYPE)
+
+                UserDefaults.standard.set(true, forKey: KEY_ISLOGIN)
+
                 complete(true, nil)
             }
             else{
