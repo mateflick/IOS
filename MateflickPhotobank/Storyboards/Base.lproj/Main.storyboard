@@ -5185,6 +5185,17 @@
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
+                                                        <button opaque="NO" alpha="0.0" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoh-rC-Am3">
+                                                            <rect key="frame" x="113" y="2" width="25" height="25"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="25" id="aQi-95-mNx"/>
+                                                                <constraint firstAttribute="height" constant="25" id="mmI-JO-DXS"/>
+                                                            </constraints>
+                                                            <state key="normal" image="close-button"/>
+                                                            <connections>
+                                                                <action selector="onDelete:" destination="q0w-RY-rOv" eventType="touchUpInside" id="WVt-mg-lM2"/>
+                                                            </connections>
+                                                        </button>
                                                     </subviews>
                                                 </view>
                                                 <constraints>
@@ -5200,14 +5211,17 @@
                                                     <constraint firstItem="EJP-Jq-uxo" firstAttribute="centerY" secondItem="KtK-oi-sIz" secondAttribute="centerY" id="jB6-Y3-Nsn"/>
                                                     <constraint firstAttribute="bottom" secondItem="mee-oE-wH7" secondAttribute="bottom" id="nh5-IX-CHS"/>
                                                     <constraint firstAttribute="trailing" secondItem="z3M-uS-aLK" secondAttribute="trailing" constant="5" id="oe3-b3-ert"/>
+                                                    <constraint firstAttribute="trailing" secondItem="qoh-rC-Am3" secondAttribute="trailing" constant="2" id="r0G-d2-bct"/>
                                                     <constraint firstItem="D4i-de-fTj" firstAttribute="bottom" secondItem="mee-oE-wH7" secondAttribute="bottom" id="s0J-hO-gUz"/>
                                                     <constraint firstItem="mee-oE-wH7" firstAttribute="top" secondItem="q0w-RY-rOv" secondAttribute="top" id="vLt-Sq-5Mu"/>
                                                     <constraint firstItem="z3M-uS-aLK" firstAttribute="centerY" secondItem="q0w-RY-rOv" secondAttribute="centerY" constant="-10" id="wj0-qI-RhD"/>
+                                                    <constraint firstItem="qoh-rC-Am3" firstAttribute="top" secondItem="q0w-RY-rOv" secondAttribute="top" constant="2" id="xUJ-vU-cJ3"/>
                                                 </constraints>
                                                 <connections>
                                                     <outlet property="albumThumbImageView" destination="mee-oE-wH7" id="2ze-vp-SdV"/>
                                                     <outlet property="albumTitleLabel" destination="z3M-uS-aLK" id="dhg-Hh-N70"/>
                                                     <outlet property="countLabel" destination="EJP-Jq-uxo" id="BTp-ES-hvV"/>
+                                                    <outlet property="deleteButton" destination="qoh-rC-Am3" id="2En-be-tYn"/>
                                                 </connections>
                                             </collectionViewCell>
                                         </cells>
@@ -5422,6 +5436,7 @@
         <image name="bg_card" width="128" height="175"/>
         <image name="bg_gradient" width="747" height="147"/>
         <image name="camera" width="34" height="27"/>
+        <image name="close-button" width="30" height="30"/>
         <image name="cloud_more" width="36" height="27"/>
         <image name="contact_us" width="45" height="45"/>
         <image name="dollar" width="15" height="27"/>

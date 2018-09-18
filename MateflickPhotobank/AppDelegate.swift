@@ -24,20 +24,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // Facebook Initialize
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
-        
-        let authStoryboard = UIStoryboard.init(name: Storyboard.auth, bundle: nil)
         let mainStoryboard = UIStoryboard.init(name: Storyboard.main, bundle: nil)
         
         var rootViewController : UIViewController!
         rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "StarterViewControllerID")
-        
-//        if isAlreadyLoggedIn() {
-//            rootViewController = mainStoryboard.instantiateViewController(withIdentifier: "ContainerVC")
-//        }
-//        else{
-//            rootViewController = authStoryboard.instantiateViewController(withIdentifier: "authNavController")
-//        }
-        
+                
         self.window?.rootViewController = rootViewController
         self.window?.makeKeyAndVisible()
         

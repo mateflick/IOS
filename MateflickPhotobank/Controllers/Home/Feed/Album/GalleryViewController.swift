@@ -28,6 +28,7 @@ class GalleryViewController: UIViewController {
     
     var pageNumber = 1
     var totalPageNumber : Int = 0
+    var deleteMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +41,10 @@ class GalleryViewController: UIViewController {
         
         // Notification for create album
         NotificationCenter.default.addObserver(self, selector: #selector(GalleryViewController.createdNewAlbum(notification:)), name: Notification.Name("notification_created_album"), object: nil)
+        
+        // create long press gesture
+        let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(GalleryViewController.onLongPress))
+        albumCollectionView.addGestureRecognizer(lpgr)
         
         // load the album list
         self.getAlbumList()
@@ -64,8 +69,8 @@ class GalleryViewController: UIViewController {
         addButton.frame = CGRect(x: 0, y: 0, width: 40, height: 40)
         addButton.imageEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5)
 
-        let addChallengeBarButton = UIBarButtonItem(customView: addButton)
-        self.navigationItem.rightBarButtonItem = addChallengeBarButton
+        let barButtonItem = UIBarButtonItem(customView: addButton)
+        self.navigationItem.rightBarButtonItem = barButtonItem
     }
     
     @objc func updatedAlbum(notification : Notification) {
@@ -93,6 +98,23 @@ class GalleryViewController: UIViewController {
             self.navigationController?.pushViewController(newAlbumVC, animated: true)
         }
     }
+    
+    @objc func onLongPress(gestureRecognizer: UILongPressGestureRecognizer)
+    {
+        if gestureRecognizer.state != .ended {
+            return
+        }
+            
+        deleteMode = !deleteMode
+        
+        print("deleteMode:\(deleteMode)")
+        
+        for cell in albumCollectionView.visibleCells as! [GalleryAlbumCollectionViewCell] {
+            cell.deleteMode(deleteMode, animated:true)
+        }
+        
+    }
+    
     
     func getAlbumList(){
         if !Reachability.isConnectedToNetwork() {
@@ -161,6 +183,7 @@ extension GalleryViewController : UICollectionViewDataSource, UICollectionViewDe
         }
         
         cell.albumTitleLabel.text = albumData.title
+        cell.deleteMode(deleteMode)
         
         let attrStr = NSMutableAttributedString(string: albumData.albumDescription)
         let searchPattern = "@"
@@ -209,12 +232,97 @@ extension GalleryViewController : UICollectionViewDataSource, UICollectionViewDe
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return minimumInteritemSpacing
     }
+    
 }
+
+
+
+
+
+
 
 class GalleryAlbumCollectionViewCell : UICollectionViewCell {
     static let cellIdentifier = "GalleryAlbumCollectionViewCell"
     @IBOutlet weak var albumThumbImageView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
+    @IBOutlet weak var deleteButton: UIButton!
     
+    @IBAction func onDelete(_ sender: Any) {
+    }
+    
+    func deleteMode(_ mode: Bool, animated: Bool = false)
+    {
+        let currentMode = deleteButton.alpha == 1
+        
+        if mode == currentMode {
+            return
+        }
+        
+        if animated == true {
+            UIView.animate(withDuration: 0.35) {
+                self.deleteButton.alpha = mode ? 1.0 : 0.0
+            }
+            
+        }
+
+        wiggle(mode)
+        
+    }
+    
+    func wiggle(_ on: Bool = true)
+    {
+        on ? startWiggle() : stopWiggle()
+    }
+    
+    func startWiggle(duration: Double = 0.25, displacement: CGFloat = 1.0, degreesRotation: CGFloat = 2.0) {
+        let negativeDisplacement = -1.0 * displacement
+        let position = CAKeyframeAnimation.init(keyPath: "position")
+        position.beginTime = 0.8
+        position.duration = duration
+        position.values = [
+            NSValue(cgPoint: CGPoint(x: negativeDisplacement, y: negativeDisplacement)),
+            NSValue(cgPoint: CGPoint(x: 0, y: 0)),
+            NSValue(cgPoint: CGPoint(x: negativeDisplacement, y: 0)),
+            NSValue(cgPoint: CGPoint(x: 0, y: negativeDisplacement)),
+            NSValue(cgPoint: CGPoint(x: negativeDisplacement, y: negativeDisplacement))
+        ]
+        position.calculationMode = "linear"
+        position.isRemovedOnCompletion = false
+        position.repeatCount = Float.greatestFiniteMagnitude
+        position.beginTime = CFTimeInterval(Float(arc4random()).truncatingRemainder(dividingBy: Float(25)) / Float(100))
+        position.isAdditive = true
+        
+        let transform = CAKeyframeAnimation.init(keyPath: "transform")
+        transform.beginTime = 2.6
+        transform.duration = duration
+        transform.valueFunction = CAValueFunction(name: kCAValueFunctionRotateZ)
+        transform.values = [
+            degreesToRadians(-1.0 * degreesRotation),
+            degreesToRadians(degreesRotation),
+            degreesToRadians(-1.0 * degreesRotation)
+        ]
+        transform.calculationMode = "linear"
+        transform.isRemovedOnCompletion = false
+        transform.repeatCount = Float.greatestFiniteMagnitude
+        transform.isAdditive = true
+        transform.beginTime = CFTimeInterval(Float(arc4random()).truncatingRemainder(dividingBy: Float(25)) / Float(100))
+        
+        self.layer.add(position, forKey: nil)
+        self.layer.add(transform, forKey: nil)
+    }
+    
+    private func degreesToRadians(_ x: CGFloat) -> CGFloat {
+        return .pi * x / 180.0
+    }
+
+    func stopWiggle() {
+        self.layer.removeAllAnimations()
+    }
+    
+    
+    override func prepareForReuse() {
+        stopWiggle()
+        deleteButton.alpha = 0
+    }
 }
