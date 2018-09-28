@@ -74,6 +74,7 @@
 		28FFFCF420F615EA00CC6E27 /* TimelineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF320F615EA00CC6E27 /* TimelineData.swift */; };
 		28FFFCF820F6F81900CC6E27 /* EditAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28FFFCF720F6F81900CC6E27 /* EditAlbumViewController.swift */; };
 		471E74929E342C539A9C88D1 /* Pods_MateflickPhotobank.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B585F0C38402F89ACBE290F /* Pods_MateflickPhotobank.framework */; };
+		4F013682215B6F000015FCC5 /* SwitchAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F013681215B6F000015FCC5 /* SwitchAccountViewController.swift */; };
 		4FE0B0D2214AB0E700589238 /* StarterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FE0B0D1214AB0E700589238 /* StarterViewController.swift */; };
 		80B47E8415416539461F6030 /* Pods_MateflickPhotobankTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9283C815B2D4C0C2888F616E /* Pods_MateflickPhotobankTests.framework */; };
 		ED56097D937BBD66C16AF43D /* Pods_MateflickPhotobankUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6934B31B52EE0D8CBC18F8CC /* Pods_MateflickPhotobankUITests.framework */; };
@@ -173,6 +174,7 @@
 		2DEFFF4A56EEB8F85A595E1D /* Pods-MateflickPhotobank.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.release.xcconfig"; sourceTree = "<group>"; };
 		2FD13FA45F28D7E72931D25E /* Pods-MateflickPhotobankUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		4470CF00808DEA685B8531FD /* Pods-MateflickPhotobankUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4F013681215B6F000015FCC5 /* SwitchAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwitchAccountViewController.swift; sourceTree = "<group>"; };
 		4FE0B0D1214AB0E700589238 /* StarterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarterViewController.swift; sourceTree = "<group>"; };
 		52C2A20A22873574A6A756B5 /* Pods-MateflickPhotobankTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobankTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests.release.xcconfig"; sourceTree = "<group>"; };
 		60D9EC3FE058C9C206C2AB6E /* Pods-MateflickPhotobank.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MateflickPhotobank.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank.debug.xcconfig"; sourceTree = "<group>"; };
@@ -387,6 +389,7 @@
 				28866F2020F973E600310525 /* InstagramLoginViewController.swift */,
 				28586CC520B703370074C97D /* RegisterViewController.swift */,
 				28586CC720B70AA90074C97D /* CreateAccountViewController.swift */,
+				4F013681215B6F000015FCC5 /* SwitchAccountViewController.swift */,
 				2864080A20B93D9900AC5623 /* TermsConditionsViewController.swift */,
 				2864080C20B93DD500AC5623 /* PrivacyPolicyViewController.swift */,
 				2864082E20BAC9C200AC5623 /* ForgotPasswordViewController.swift */,
@@ -886,6 +889,7 @@
 				2891D7AF210084BA00875B16 /* ChallengeData.swift in Sources */,
 				28866F2320F9DB2F00310525 /* PastEventsViewController.swift in Sources */,
 				2864082720BAC2D900AC5623 /* FeedViewController.swift in Sources */,
+				4F013682215B6F000015FCC5 /* SwitchAccountViewController.swift in Sources */,
 				2864082920BAC2F100AC5623 /* MyPhotobankViewController.swift in Sources */,
 				4FE0B0D2214AB0E700589238 /* StarterViewController.swift in Sources */,
 				2864081B20BABFAA00AC5623 /* MoreTableViewController.swift in Sources */,
