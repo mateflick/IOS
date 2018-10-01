@@ -155,7 +155,7 @@ class CreateAlbumViewController: UIViewController {
                     }
                     else{
                         // do something process
-                        self.view.makeToast("Created album successfully!")
+                        self.view.makeToast("Album created successfully!")
                         self.clearAssets()
                     }
                 }
@@ -205,7 +205,7 @@ class CreateAlbumViewController: UIViewController {
                 DispatchQueue.main.async {
                     self.dismissLoadingProgress(view: self.navigationController?.view)
                     // do something process
-                    self.view.makeToast("Created album successfully!")
+                    self.view.makeToast("Album created successfully!")
                     self.clearAssets()
                 }
             }

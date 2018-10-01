@@ -124,8 +124,8 @@ class UserData: NSObject {
         UserDefaults.standard.set(archData, forKey: "userData")
     }
     
-    func loadFromUserDefaults() -> Void {
-        let archData = UserDefaults.standard.object(forKey: "userData")
-        
-    }
+//    func loadFromUserDefaults() -> Void {
+//        let archData = UserDefaults.standard.object(forKey: "userData")
+//
+//    }
 }

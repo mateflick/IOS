@@ -20,6 +20,7 @@ class GalleryViewController: UIViewController {
     
     let minimumInteritemSpacing : CGFloat = 5
     
+    var timer: Timer = Timer();
     var albums : [AlbumData] = []{
         didSet{
             self.albumCollectionView.reloadData()
@@ -45,6 +46,9 @@ class GalleryViewController: UIViewController {
         // create long press gesture
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(GalleryViewController.onLongPress))
         albumCollectionView.addGestureRecognizer(lpgr)
+        
+        let tap = UITapGestureRecognizer(target: self, action: #selector(GalleryViewController.onTap))
+        view.addGestureRecognizer(tap)
         
         // load the album list
         self.getAlbumList()
@@ -101,20 +105,39 @@ class GalleryViewController: UIViewController {
     
     @objc func onLongPress(gestureRecognizer: UILongPressGestureRecognizer)
     {
-        if gestureRecognizer.state != .ended {
+        
+        switch gestureRecognizer.state {
+        case .began:
+            print(".began")
+            timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: false, block: { (t) in
+                t.invalidate()
+                
+                self.deleteMode = !self.deleteMode
+                
+                print("deleteMode:\(self.deleteMode)")
+                
+                for cell in self.albumCollectionView.visibleCells as! [GalleryAlbumCollectionViewCell] {
+                    cell.deleteMode(self.deleteMode, animated:true)
+                }
+            })
             return
+        case .changed:
+            return
+        default:
+            print(gestureRecognizer.state)
+            timer.invalidate()
         }
-            
-        deleteMode = !deleteMode
-        
-        print("deleteMode:\(deleteMode)")
-        
-        for cell in albumCollectionView.visibleCells as! [GalleryAlbumCollectionViewCell] {
-            cell.deleteMode(deleteMode, animated:true)
-        }
+
         
     }
     
+    @objc func onTap(gestureRecognizer: UITapGestureRecognizer)
+    {
+        deleteMode = false
+        for cell in self.albumCollectionView.visibleCells as! [GalleryAlbumCollectionViewCell] {
+            cell.deleteMode(false, animated:true)
+        }
+    }
     
     func getAlbumList(){
         if !Reachability.isConnectedToNetwork() {
@@ -249,6 +272,7 @@ class GalleryAlbumCollectionViewCell : UICollectionViewCell {
     @IBOutlet weak var deleteButton: UIButton!
     
     @IBAction func onDelete(_ sender: Any) {
+        deleteMode(false, animated: true);
     }
     
     func deleteMode(_ mode: Bool, animated: Bool = false)
@@ -263,14 +287,16 @@ class GalleryAlbumCollectionViewCell : UICollectionViewCell {
             UIView.animate(withDuration: 0.35) {
                 self.deleteButton.alpha = mode ? 1.0 : 0.0
             }
-            
+        }
+        else {
+            self.deleteButton.alpha = mode ? 1.0 : 0.0
         }
 
         wiggle(mode)
         
     }
     
-    func wiggle(_ on: Bool = true)
+    func wiggle(_ on: Bool, animated: Bool = true)
     {
         on ? startWiggle() : stopWiggle()
     }
