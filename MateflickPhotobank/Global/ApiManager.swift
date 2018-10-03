@@ -245,6 +245,28 @@ class ApiManager: NSObject {
         }
     }
     
+    // Remove album
+    func removeAlbum(_ params: [String:Any], complete:@escaping(String? , String?) -> Void){
+        let requestUrl = "\(baseURL)\(removeGallery)"
+        self.requestWithJson(method: .post, url: requestUrl, params: params) { (response, error) in
+            if error != nil {
+                print("Remove album request Error = \(error!.localizedDescription)")
+            }
+            else{
+                let statusCode = response!["code"].intValue
+                if statusCode  == 200 {
+                    let raw = response!["data"]
+                    complete(raw.rawString(), nil)
+                }
+                else{
+                    let errorMsg = response!["message"].stringValue
+                    complete(nil, errorMsg)
+                }
+            }
+        }
+    }
+
+    
     // Create Event
     func createNewEvent(_ params : [String : Any], complete:@escaping(EventData? , String?)-> Void) -> Void {
         let requestUrl = "\(baseURL)\(createEvent)"

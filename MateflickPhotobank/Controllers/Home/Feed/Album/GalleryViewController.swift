@@ -31,6 +31,10 @@ class GalleryViewController: UIViewController {
     var totalPageNumber : Int = 0
     var deleteMode = false
     
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -43,6 +47,9 @@ class GalleryViewController: UIViewController {
         // Notification for create album
         NotificationCenter.default.addObserver(self, selector: #selector(GalleryViewController.createdNewAlbum(notification:)), name: Notification.Name("notification_created_album"), object: nil)
         
+        // Notification for delete album
+        NotificationCenter.default.addObserver(self, selector: #selector(GalleryViewController.deleteAlbum(notification:)), name: Notification.Name("notification_delete_album"), object: nil)
+
         // create long press gesture
         let lpgr = UILongPressGestureRecognizer(target: self, action: #selector(GalleryViewController.onLongPress))
         albumCollectionView.addGestureRecognizer(lpgr)
@@ -54,15 +61,11 @@ class GalleryViewController: UIViewController {
         self.getAlbumList()
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
     
     
-    override func viewDidLayoutSubviews() {
-        
-    }
+    
+    
+    
     
     func addCreateAlbumButton(){
          //create the Add Challenge button
@@ -93,10 +96,50 @@ class GalleryViewController: UIViewController {
         self.albumCollectionView.reloadData()
     }
     
-    @objc func createdNewAlbum(notification : Notification){
+    @objc func createdNewAlbum(notification : Notification) {
         self.getAlbumList()
     }
     
+    @objc func deleteAlbum(notification: Notification) {
+        let cell =  notification.object as! GalleryAlbumCollectionViewCell
+        let albumData = cell.albumData
+
+        let params : [String : Any] = [
+            "UserId" : UserInfo.sharedInstance.userId,
+            "GalleryId" : albumData?.albumId!
+        ]
+        
+        self.showLoadingProgress(view: self.navigationController?.view, label: "Deleting album...")
+        ApiManager.sharedInstance.removeAlbum(params) { (result, errorMsg) in
+            DispatchQueue.main.async {
+                self.dismissLoadingProgress(view: self.navigationController?.view)
+                if result != nil {
+                    
+                    // find albumData in albums
+                    
+                    for album in self.albums {
+                        if album.albumId == albumData!.albumId {
+                            let albumIndex = self.albums.index(of: album)!
+                            self.albums.remove(at: albumIndex)
+
+                            if let idx = self.albumCollectionView.indexPath(for: cell) {
+                                self.albumCollectionView.deleteItems(at: [idx])
+                            }
+
+                            break
+                        }
+                    }
+
+                }
+                else{
+                    self.showSimpleAlert(title: "", message: errorMsg, complete: nil)
+                }
+            }
+        }
+        
+    }
+    
+
     @objc func addAlbum(){
         if let newAlbumVC = self.storyboard?.instantiateViewController(withIdentifier: "CreateAlbumVC") as? CreateAlbumViewController {
             self.navigationController?.pushViewController(newAlbumVC, animated: true)
@@ -196,6 +239,7 @@ class GalleryViewController: UIViewController {
 
 
 extension GalleryViewController : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell : GalleryAlbumCollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: GalleryAlbumCollectionViewCell.cellIdentifier, for: indexPath) as! GalleryAlbumCollectionViewCell
         let albumData = self.albums[indexPath.row]
@@ -207,6 +251,8 @@ extension GalleryViewController : UICollectionViewDataSource, UICollectionViewDe
         
         cell.albumTitleLabel.text = albumData.title
         cell.deleteMode(deleteMode)
+        
+        cell.albumData = albumData
         
         let attrStr = NSMutableAttributedString(string: albumData.albumDescription)
         let searchPattern = "@"
@@ -265,15 +311,25 @@ extension GalleryViewController : UICollectionViewDataSource, UICollectionViewDe
 
 
 class GalleryAlbumCollectionViewCell : UICollectionViewCell {
+    
     static let cellIdentifier = "GalleryAlbumCollectionViewCell"
     @IBOutlet weak var albumThumbImageView: UIImageView!
     @IBOutlet weak var albumTitleLabel: UILabel!
     @IBOutlet weak var countLabel: UILabel!
     @IBOutlet weak var deleteButton: UIButton!
     
-    @IBAction func onDelete(_ sender: Any) {
-        deleteMode(false, animated: true);
+    weak var albumData: AlbumData?
+    
+    
+    @IBAction func onDelete(_ sender: UIButton) {
+        
+        deleteMode(false)
+        NotificationCenter.default.post(name: Notification.Name("notification_delete_album"), object: self)
+
+
     }
+    
+    
     
     func deleteMode(_ mode: Bool, animated: Bool = false)
     {
