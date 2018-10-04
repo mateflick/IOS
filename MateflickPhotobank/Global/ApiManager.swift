@@ -16,7 +16,12 @@ class ApiManager: NSObject {
         return instance
     }()
     
+#if DEBUG
+//    let baseURL         = "http://192.168.0.102:3000/"
     let baseURL         = "https://mateflick.herokuapp.com/"
+#else
+    let baseURL         = "https://mateflick.herokuapp.com/"
+#endif
     let userLogin       = "user/login"
     let userRegister    = "user/register"
     let userProfile     = "user/profile"
@@ -70,6 +75,30 @@ class ApiManager: NSObject {
     func getUserProfileImagePath(_ userId : String) -> String {
         return "\(baseURL)\(downloadImage)\(userId)"
     }
+    
+    
+    
+    private static var manager: Alamofire.SessionManager = {
+        
+        // Create the server trust policies
+        let serverTrustPolicies: [String: ServerTrustPolicy] = [
+            "test.example.com": .disableEvaluation
+        ]
+        
+        // Create custom manager
+        let configuration = URLSessionConfiguration.default
+        configuration.httpAdditionalHeaders = Alamofire.SessionManager.defaultHTTPHeaders
+        let manager = Alamofire.SessionManager(
+            configuration: URLSessionConfiguration.default,
+            serverTrustPolicyManager: ServerTrustPolicyManager(policies: serverTrustPolicies)
+        )
+        
+        return manager
+    }()
+    
+    
+    
+    
     
     // MARK:- REQUEST METHOD
     func request(method:HTTPMethod, url:String, params:[String:Any]?, headers :HTTPHeaders?, encoding: ParameterEncoding = URLEncoding.default, complete: @escaping DefaultResponse) -> Void {
