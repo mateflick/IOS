@@ -94,12 +94,12 @@ class PhotoUploadManager: NSObject {
                                 else{
                                     self.downloadOneAssetFromPhotos(self.selectedAssets[index + 1], index: index + 1, complete: complete)
                                 }
-                            }catch {
+                            } catch {
                                 print("download failed : \(error.localizedDescription)")
                             }
                         }
                     }
-                    else{
+                    else {
                         print("Can't get the image asset!")
                         if index == self.selectedAssets.count - 1 {
                             DispatchQueue.main.async {

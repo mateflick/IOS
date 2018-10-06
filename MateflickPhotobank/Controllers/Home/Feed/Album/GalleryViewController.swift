@@ -55,6 +55,7 @@ class GalleryViewController: UIViewController {
         albumCollectionView.addGestureRecognizer(lpgr)
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(GalleryViewController.onTap))
+        tap.cancelsTouchesInView = false
         view.addGestureRecognizer(tap)
         
         // load the album list
