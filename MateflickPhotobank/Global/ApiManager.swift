@@ -17,8 +17,8 @@ class ApiManager: NSObject {
     }()
     
 #if DEBUG
-    let baseURL         = "http://192.168.0.102:3000/"
-//    let baseURL         = "https://mateflick.herokuapp.com/"
+//    let baseURL         = "http://192.168.0.102:3000/"
+    let baseURL         = "https://mateflick.herokuapp.com/"
 #else
     let baseURL         = "https://mateflick.herokuapp.com/"
 #endif

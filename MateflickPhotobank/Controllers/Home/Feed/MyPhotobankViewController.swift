@@ -18,6 +18,8 @@ class MyPhotobankViewController: UIViewController {
     @IBOutlet weak var eventsView: UIView!
     @IBOutlet weak var familyFriendsView: UIView!
     @IBOutlet weak var photographersView: UIView!    
+    @IBOutlet weak var barcodeGenView: UIView!
+    @IBOutlet weak var barcodeReadView: UIView!
     @IBOutlet weak var photographerLabel: UILabel!
     
     override func viewDidLoad() {
