@@ -6,29 +6,29 @@ target 'MateflickPhotobank' do
   use_frameworks!
 
   # Pods for MateflickPhotobank
-pod 'TPKeyboardAvoiding'
-pod 'Alamofire'
-pod 'SwiftyJSON'
-pod 'SkyFloatingLabelTextField'
-pod 'SlideMenuControllerSwift'
-pod 'XLPagerTabStrip'
-pod 'PinCodeTextField'
-pod 'FSCalendar'
-pod 'CountryPickerView'
-pod 'DropDown'
-pod 'CHIPageControl'
-pod 'MBProgressHUD'
-pod 'LocationPickerViewController'
-pod 'DatePickerDialog'
-pod 'AssetsPickerViewController', '~> 2.0'
-pod 'Toast-Swift'
-pod 'SDWebImage'
-pod 'UITextView+Placeholder'
+  pod 'Alamofire'
+  pod 'AssetsPickerViewController', '~> 2.0'
+  pod 'CHIPageControl'
+  pod 'CountryPickerView'
+  pod 'DatePickerDialog'
+  pod 'DropDown'
+  pod 'FSCalendar'
+  pod 'LocationPickerViewController'
+  pod 'MBProgressHUD'
+  pod 'MZFormSheetPresentationController'
+  pod 'PinCodeTextField'
+  pod 'SDWebImage'
+  pod 'SlideMenuControllerSwift'
+  pod 'SkyFloatingLabelTextField'
+  pod 'SwiftyJSON'
+  pod 'Toast-Swift'
+  pod 'TPKeyboardAvoiding'
+  pod 'UITextView+Placeholder'
+  pod 'XLPagerTabStrip'
 
-
+  # should be reconsidered
 pod 'FBSDKLoginKit'
 pod 'FacebookLogin'
-
 pod 'SwiftInstagram'
 
   target 'MateflickPhotobankTests' do

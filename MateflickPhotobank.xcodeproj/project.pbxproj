@@ -521,7 +521,6 @@
 				28586C8220B67E7C0074C97D /* Frameworks */,
 				28586C8320B67E7C0074C97D /* Resources */,
 				003CE6C0DDDCE3849F975665 /* [CP] Embed Pods Frameworks */,
-				9EE827C698A4045129E482C9 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -540,8 +539,6 @@
 				28586C9520B67E800074C97D /* Sources */,
 				28586C9620B67E800074C97D /* Frameworks */,
 				28586C9720B67E800074C97D /* Resources */,
-				7DDCFC33B638FAB3975196A4 /* [CP] Embed Pods Frameworks */,
-				59B3B34BB3EA9136C4348413 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -561,8 +558,6 @@
 				28586CA020B67E800074C97D /* Sources */,
 				28586CA120B67E800074C97D /* Frameworks */,
 				28586CA220B67E800074C97D /* Resources */,
-				25ED2C7E576B6403CC5A1825 /* [CP] Embed Pods Frameworks */,
-				8F9FDEDDC3BBBED269564649 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -678,6 +673,8 @@
 				"${BUILT_PRODUCTS_DIR}/FadeView/FadeView.framework",
 				"${BUILT_PRODUCTS_DIR}/LocationPickerViewController/LocationPickerViewController.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MZAppearance/MZAppearance.framework",
+				"${BUILT_PRODUCTS_DIR}/MZFormSheetPresentationController/MZFormSheetPresentationController.framework",
 				"${BUILT_PRODUCTS_DIR}/PinCodeTextField/PinCodeTextField.framework",
 				"${BUILT_PRODUCTS_DIR}/PureLayout/PureLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -712,6 +709,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FadeView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LocationPickerViewController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZAppearance.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MZFormSheetPresentationController.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PinCodeTextField.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PureLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -732,36 +731,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		25ED2C7E576B6403CC5A1825 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		59B3B34BB3EA9136C4348413 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		6933F9799E6CD36D58044F28 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -780,21 +749,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7DDCFC33B638FAB3975196A4 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankTests/Pods-MateflickPhotobankTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		8D4983FC0B860240A422EE43 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -811,36 +765,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8F9FDEDDC3BBBED269564649 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobankUITests/Pods-MateflickPhotobankUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		9EE827C698A4045129E482C9 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MateflickPhotobank/Pods-MateflickPhotobank-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A6CED35768D2A3446B22FC65 /* [CP] Check Pods Manifest.lock */ = {
