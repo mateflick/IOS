@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MZFormSheetPresentationController
 
 class MyPhotobankViewController: UIViewController {
 
@@ -19,7 +20,7 @@ class MyPhotobankViewController: UIViewController {
     @IBOutlet weak var familyFriendsView: UIView!
     @IBOutlet weak var photographersView: UIView!    
     @IBOutlet weak var barcodeGenView: UIView!
-    @IBOutlet weak var barcodeReadView: UIView!
+    @IBOutlet weak var barcodeScanView: UIView!
     @IBOutlet weak var photographerLabel: UILabel!
     
     override func viewDidLoad() {
@@ -64,6 +65,14 @@ class MyPhotobankViewController: UIViewController {
         else{
             photographerLabel.text = "My Users"
         }
+        
+        let qrGenGesture = UITapGestureRecognizer(target: self, action: #selector(qrCodeGen))
+        barcodeGenView.addGestureRecognizer(qrGenGesture)
+        barcodeGenView.isUserInteractionEnabled = true
+        
+        let qrScanGesture = UITapGestureRecognizer(target: self, action: #selector(qrCodeScan))
+        barcodeScanView.addGestureRecognizer(qrScanGesture)
+        barcodeScanView.isUserInteractionEnabled = true
         
     }
 
@@ -120,12 +129,35 @@ class MyPhotobankViewController: UIViewController {
     }
     
     // My Photographers
-    @objc func selectedPhotographers (){
+    @objc func selectedPhotographers() {
         if let photographersVC = self.storyboard?.instantiateViewController(withIdentifier: "MyPeopleVC") as? MyPeopleViewController {
             photographersVC.screentype = ScreenType.photographers
             self.navigationController?.pushViewController(photographersVC, animated: true)
         }
     }
+    
+    @objc func qrCodeGen() {
+        let vc:QRCodeGenViewController = QRCodeGenViewController.create();
+        
+        let pc:MZFormSheetPresentationViewController = MZFormSheetPresentationViewController(contentViewController: vc);
+        pc.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
+        pc.presentationController?.shouldCenterVertically = true
+        pc.presentationController?.shouldDismissOnBackgroundViewTap = true
+        
+        self.present(pc, animated: true, completion: nil)
+    }
+    
+    @objc func qrCodeScan() {
+        let vc:QRCodeScanViewController = QRCodeScanViewController.create();
+        
+        let pc:MZFormSheetPresentationViewController = MZFormSheetPresentationViewController(contentViewController: vc);
+        pc.contentViewControllerTransitionStyle = MZFormSheetPresentationTransitionStyle.fade
+        pc.presentationController?.shouldCenterVertically = true
+        pc.presentationController?.shouldDismissOnBackgroundViewTap = true
+        
+        self.present(pc, animated: true, completion: nil)
+    }
+    
 }
 
 extension MyPhotobankViewController : UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
